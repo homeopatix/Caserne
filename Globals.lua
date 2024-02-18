@@ -12,25 +12,26 @@ function CreateLocalizationInfo()
 		Strings.PluginName = "Caserne";
 		Strings.PluginText = "Caserne";
 		Strings.PluginHerault1 = "Sch\195\188tze"; 
-		Strings.PluginHerault2 = "Hofenungsherold"; 
+		Strings.PluginHerault2 = "Hoffnungsherold"; 
 		Strings.PluginHerault3 = "Siegesherold"; 
 		Strings.PluginHerault4 = "Kriegsherold"; 
 		Strings.PluginReleaseButton = "Herold freilassen";
 		Strings.PluginReleaseAlias = "/begleiter freilassen";
-		Strings.CommandDelete = "Räumen Sie die Küstenabschnitte der Caserne frei";
-		Strings.PluginLocked = "Gesperrte Symbole";
-		Strings.PluginUnlocked = "Symbole freigeschaltet";
+		Strings.CommandDelete = "Alle Verkn\195\188pfungen gel\195\182scht!";
+		Strings.PluginLocked = "Verkn\195\188pfungen gesperrt";
+		Strings.PluginUnlocked = "Verkn\195\188pfungen entsperrt";
 		Strings.PluginAltEnable = "Alt-Taste aktiviert";
 		Strings.PluginAltDesable = "Alt-Taste deaktiviert";
-		Strings.PluginWindowShow = "Schaufenster.";
-		Strings.PluginWindowHide = "Verstecke das Fenster.";
+		Strings.PluginWindowShow = "Fenster wird angezeigt";
+		Strings.PluginWindowHide = "Fenster wird ausgeblendet";
 		Strings.PluginHelp = " *** Caserne Hilfe ***\n\n" ..
-		"/show Zeigen Caserne an\n" ..
-		"/hide Verstecke Caserne\n" ..
-		"/lock um die Symbole zu sperren oder zu entsperren\n" ..
-		"/alt - Aktivieren oder deaktivieren Sie die alt-Taste um das Symbol zu verschieben.\n" ..
-		"/toggle - Fenster ein-oder ausblenden\n" ..
-		"/Clear l\195\182scht alle Verkn\195\188pfungen\n\nSie k\195\182nnen Ihre Kameraden per Drag & Drop an eine beliebige Stelle ziehen und mit dem Mausrad l\195\182schen";
+		"/ca show - Zeigt das Fenster an.\n" ..
+		"/ca hide - Blendet das Fenster aus.\n" ..
+		"/ca lock - Sperrt/entsperrt die Verkn\195\188pfungen.\n" ..
+		"/ca alt - Alt-Taste gedr\195\188ckt halten, um das Symbol zu verschieben.\n" ..
+		"/ca toggle - Fenster anzeigen/ausblenden.\n" ..
+		"/ca clear - L\195\182scht alle Verkn\195\188pfungen.\n\n" ..
+		"Du kannst deine Kameraden per Drag & Drop an eine beliebigen Platz ziehen und mit dem Mausrad l\195\182schen.";
 
 elseif Turbine.Engine.GetLanguage() == Turbine.Language.French then
 		Strings.PluginName = "Caserne";
@@ -49,12 +50,12 @@ elseif Turbine.Engine.GetLanguage() == Turbine.Language.French then
 		Strings.PluginWindowShow = "Affiche la fen\195\168tre.";
 		Strings.PluginWindowHide = "Cache la fen\195\168tre.";
 		Strings.PluginHelp = " *** Caserne Aide ***\n\n" ..
-		"/show affiche Caserne\n" ..
-		"/hide cache Caserne\n" .. 
-		"/lock pour verrouill\195\169 ou d\195\169verrouill\195\169 les icones\n" ..
-		"/alt - Active ou d\195\169sactive la touche alt pour le d\195\169placement de l'icon.\n" ..
-		"/toggle - affiche ou cache la fenetre.\n" ..
-		"/Clear efface tous les raccourcis\n\nVous pouvez faire glisser et d\195\169poser vos compagnon d'armes ou vous voulez et les effacer avec la molette de la souris";
+		"/ca show - affiche Caserne\n" ..
+		"/ca hide - cache Caserne\n" .. 
+		"/ca lock - pour verrouill\195\169 ou d\195\169verrouill\195\169 les icones\n" ..
+		"/ca alt - Active ou d\195\169sactive la touche alt pour le d\195\169placement de l'icon.\n" ..
+		"/ca toggle - affiche ou cache la fenetre.\n" ..
+		"/ca clear - efface tous les raccourcis\n\nVous pouvez faire glisser et d\195\169poser vos compagnon d'armes ou vous voulez et les effacer avec la molette de la souris";
 
 elseif Turbine.Engine.GetLanguage() == Turbine.Language.English then
 		Strings.PluginName = "Caserne";
@@ -73,11 +74,11 @@ elseif Turbine.Engine.GetLanguage() == Turbine.Language.English then
 		Strings.PluginWindowShow = "Show the window.";
 		Strings.PluginWindowHide = "Hide the window.";
 		Strings.PluginHelp = " *** Caserne Help ***\n\n" ..
-		"/show Display Caserne\n" ..
-		"/hide Hide Caserne\n" ..
-		"/lock to lock or unlock the icons\n" ..
-		"/alt - Activate or deactivate the alt key to move the icon.\n" ..
-		"/toggle - display or hide the window.\n" ..
-		"/Clear clears all the shortcuts\n\nYou can drag and drop your comrades anywhere you want and delete them with the mouse wheel";
+		"/ca show - Display Caserne\n" ..
+		"/ca hide - Hide Caserne\n" ..
+		"/ca lock - to lock or unlock the icons\n" ..
+		"/ca alt - Activate or deactivate the alt key to move the icon.\n" ..
+		"/ca toggle - display or hide the window.\n" ..
+		"/ca clear - clears all the shortcuts\n\nYou can drag and drop your comrades anywhere you want and delete them with the mouse wheel";
 	end
 end
